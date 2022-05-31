@@ -17,6 +17,4 @@ mvn package -DskipTests
 echo 'done with codeontology setup'
 
 echo 'Test ApacheJena with sparql --version'
-sparql --version
 echo 'Test Codeontology with ./codeontology --help'
-./codeontology --help
