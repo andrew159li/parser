@@ -7,8 +7,7 @@ echo 'Done unzipping apachejenaexit'
 
 # add PATHS
 echo 'Adding paths'
-export JENA_HOME='/app/apache-jena-4.5.0'
-export PATH=$PATH:$JENA_HOME/bin
+source ./paths.sh
 echo 'Done adding paths'
 
 # do codeontology stuff here
@@ -18,5 +17,4 @@ mvn package -DskipTests
 echo 'done with codeontology setup'
 
 echo 'Test ApacheJena with sparql --version'
-sparql --version
 echo 'Test Codeontology with ./codeontology --help'
