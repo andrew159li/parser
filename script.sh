@@ -5,11 +5,6 @@ cd /app
 tar -xf apache-jena-4.5.0.tar.gz
 echo 'Done unzipping apachejenaexit'
 
-# add PATHS
-echo 'Adding paths'
-source ./paths.sh
-echo 'Done adding paths'
-
 # do codeontology stuff here
 echo 'starting codeontology setup'
 cd /app/parser
