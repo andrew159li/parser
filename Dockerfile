@@ -16,4 +16,4 @@ RUN wget https://dlcdn.apache.org/jena/binaries/apache-jena-4.5.0.tar.gz
 RUN ["chmod", "+rwx", "/app/parser/dockerrun.sh"]
 
 EXPOSE 3030
-ENTRYPOINT [ "/app/parser/dockerrun.sh" "/bin/bash"]
+CMD ["/bin/bash"]
