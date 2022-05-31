@@ -7,8 +7,9 @@ export JENA_HOME='/app/apache-jena-4.5.0'
 export PATH=$PATH:$JENA_HOME/bin
 
 # do codeontology stuff here
-#cd parser
-#mvn package -DskipTests
+cd parser
+mvn package -DskipTests
 
 echo 'Test ApacheJena with sparql --version'
+sparql --version
 echo 'Test Codeontology with ./codeontology --help'
