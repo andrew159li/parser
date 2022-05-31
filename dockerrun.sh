@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 cd ..
 # unzip apache-jena-4.5.0.tar.gz
 tar -xf apache-jena-4.5.0.tar.gz
