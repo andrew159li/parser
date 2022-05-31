@@ -13,4 +13,5 @@ WORKDIR /app
 RUN git clone https://github.com/andrew159li/parser.git
 
 EXPOSE 3030
+# ENTRYPOINT [ "dockerrun.sh" ]
 CMD ["/bin/bash"]
