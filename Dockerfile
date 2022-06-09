@@ -12,7 +12,8 @@ LABEL Andrew Li <andrew159li@gmail.com>
 RUN apk add --no-cache openjdk11 \
     maven \
     git \
-    wget
+    wget \
+    bash
 
 RUN mkdir -p /app
 WORKDIR /app
