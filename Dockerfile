@@ -1,13 +1,18 @@
 # syntax=docker/dockerfile:1
 
-FROM ubuntu:18.04
+FROM alpine:3.14
 LABEL Andrew Li <andrew159li@gmail.com>
-RUN apt-get update && apt-get install -y \
-    openjdk-11-jdk \
+# RUN apt-get update && apt-get install -y \
+#     openjdk-11-jdk \
+#     maven \
+# 	git \
+#     wget \
+#     && rm -rf /var/lib/apt/lists/*
+
+RUN apk add --no-cache openjdk11 \
     maven \
-	git \
-    wget \
-    && rm -rf /var/lib/apt/lists/*
+    git \
+    wget
 
 RUN mkdir -p /app
 WORKDIR /app
